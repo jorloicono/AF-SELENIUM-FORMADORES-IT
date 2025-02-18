@@ -26,7 +26,7 @@ public class BConditionalTest {
 
 
     @Test
-    @EnabledOnOs(OS.WINDOWS)
+    @EnabledOnOs(OS.LINUX)
     void test4() {
         System.out.println("test4 linux");
     }

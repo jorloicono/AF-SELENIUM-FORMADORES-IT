@@ -17,9 +17,9 @@ public class AAssertionsTest {
 
         // assertions
         assertNotNull(count);
-        assertTrue(count > 0);
+        assertTrue(count < 0);
         assertEquals(3, count);
-        //assertEquals(3, count + 1, "El numero de elementos esperado es 3");
+        assertEquals(3, count + 1, "El numero de elementos esperado es 3");
 
     }
 }

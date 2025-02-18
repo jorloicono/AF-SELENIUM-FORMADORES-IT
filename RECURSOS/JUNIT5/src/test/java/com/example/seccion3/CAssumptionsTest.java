@@ -24,7 +24,7 @@ public class CAssumptionsTest {
     @Test
     void name() {
         String jdk = System.getProperty("java.home");
-        assumeFalse(jdk.contains("11"));
+        assumeFalse(jdk.contains("16.0.2"));
         assumeTrue(jdk.contains("16.0.2"));
 
         System.out.println("El test continua");

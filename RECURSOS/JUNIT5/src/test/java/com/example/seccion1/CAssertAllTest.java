@@ -21,8 +21,8 @@ public class CAssertAllTest {
         // aserciones
 
         assertAll("Comprobaciones",
-                () -> assertNotNull(count),
-                () -> assertTrue(count > 0),
+                () -> assertNull(count),
+                () -> assertTrue(count < 0),
                 () -> assertEquals(3, count)
                 );
     }
