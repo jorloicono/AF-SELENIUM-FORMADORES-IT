@@ -25,7 +25,7 @@ public class Class8 {
 
             // Navegamos a la web
 
-            driver.get("C:/Users/Jorge/Desktop/AF-DEVOPS-AVANZADO/RECURSOS/index_completo.html");
+            driver.get("C:/Users/Jorge/Desktop/AF-SELENIUM-FORMADORES-IT/RECURSOS/index_completo.html");
 
             // Busco el elemento por id y lo guardo en un webelement. Vamos a mostrar por que es necesario el explicit wait
 
