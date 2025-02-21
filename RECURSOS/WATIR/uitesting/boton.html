@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Testing UI using Watir</title>
+</head>
+
+<body>
+<script type = "text/javascript">
+  function wsclick() {
+    document.getElementById("buttondisplay").innerHTML = "Button is clicked";
+    document.getElementById("buttondisplay").style.display = "";
+  }
+</script>
+
+<form name = "myform" method = "POST">
+  <div>
+    <br>
+    <input type = "button" id = "btnsubmit" name = "btnsubmit"
+           value = "submit" onclick = "wsclick()"/>
+    <br>
+  </div>
+</form>
+<br/>
+
+<div style = "display:none;" id = "buttondisplay"></div>
+</body>
+
+</html>

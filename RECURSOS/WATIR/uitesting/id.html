@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Testing UI using Watir</title>
+</head>
+
+<body>
+<script type = "text/javascript">
+  function wsentered() {
+    console.log("inside wsentered");
+    var firstname = document.getElementById("firstname");
+
+    if (firstname.value != "") {
+      document.getElementById("displayfirstname").innerHTML =
+              "The name entered is : " + firstname.value;
+
+      document.getElementById("displayfirstname").style.display = "";
+    }
+  }
+</script>
+
+<div id = "divfirstname">
+  Enter First Name :
+  <input type = "text" id = "firstname" name = "firstname" onchange = "wsentered()" />
+</div>
+<br/>
+<br/>
+<div style = "display:none;" id = "displayfirstname">
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Testing UI using Watir</title>
+</head>
+
+<body>
+<script type = "text/javascript">
+    function wsentered() {
+        setTimeout(function() {
+            document.getElementById("btnsubmit").disabled = false; }, 3000);
+    }
+    function wsformsubmitted() {
+        document.getElementById("showmessage").style.display = "";
+    }
+</script>
+
+<div id = "divfirstname">
+    Enter First Name :
+    <input type = "text" id = "firstname" name = "firstname" onchange = "wsentered()" />
+</div>
+<br/>
+<br/>
+<button id = "btnsubmit" disabled onclick = "wsformsubmitted();">Submit</button>
+<br/<
+<br/<
+
+<div id = "showmessage" style = "display:none;color:green;font-size:25px;">l;
+    Button is clicked
+</div>
+</body>
+</html>

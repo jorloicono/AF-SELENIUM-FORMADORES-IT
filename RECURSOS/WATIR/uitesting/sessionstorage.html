@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de SessionStorage con Watir</title>
+    <script>
+        function guardarEnSessionStorage() {
+            sessionStorage.setItem("usuario", "Elena");
+            alert("Valor guardado en SessionStorage");
+        }
+
+        function obtenerDeSessionStorage() {
+            let usuario = sessionStorage.getItem("usuario");
+            alert("Valor en SessionStorage: " + (usuario ? usuario : "No hay datos almacenados"));
+        }
+    </script>
+</head>
+<body>
+<h1>Ejemplo de SessionStorage con JavaScript y Watir</h1>
+<button onclick="guardarEnSessionStorage()">Guardar en SessionStorage</button>
+<button onclick="obtenerDeSessionStorage()">Obtener de SessionStorage</button>
+</body>
+</html>

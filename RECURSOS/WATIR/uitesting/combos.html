@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Dropdown</title>
+</head>
+
+<body>
+<script type = "text/javascript">
+  function wsselected() {
+    var months = document.getElementById("months");
+
+    if (months.value != "") {
+      document.getElementById("displayselectedmonth").innerHTML =
+              "The month selected is : " + months.value;
+
+      document.getElementById("displayselectedmonth").style.display = "";
+    }
+  }
+</script>
+<form name = "myform" method = "POST">
+  <div>
+    Month is :
+    <select name = "months" id = "months" onchange = "wsselected()">
+      <option value = "">Select Month</option>
+      <option value = "Jan">January</option>
+      <option value = "Feb">February</option>
+      <option value = "Mar">March</option>
+      <option value = "Apr">April</option>
+      <option value = "May">May</option>
+      <option value = "Jun">June</option>
+      <option value = "Jul">July</option>
+      <option value = "Aug">August</option>
+      <option value = "Sept">September</option>
+      <option value = "Oct">October</option>
+      <option value = "Nov">November</option>
+      <option value = "Dec">December</option>
+    </select>
+  </div>
+  <br/>
+  <br/>
+
+  <div style = "display:none;" id = "displayselectedmonth">
+  </div>
+</body>
+</html>

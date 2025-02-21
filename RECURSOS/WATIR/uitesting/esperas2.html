@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Watir</title>
+    <script>
+        // Simula un retraso en la aparición del botón (5 segundos)
+        setTimeout(function() {
+            var btn = document.createElement("button");
+            btn.id = "boton-esperado";
+            btn.innerHTML = "Hacer clic";
+            document.body.appendChild(btn);
+        }, 5000);
+    </script>
+</head>
+<body>
+<h1>Esperando a que aparezca el botón...</h1>
+</body>
+</html>
